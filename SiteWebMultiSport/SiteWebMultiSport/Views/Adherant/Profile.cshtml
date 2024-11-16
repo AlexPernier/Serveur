@@ -1,0 +1,17 @@
+﻿@model SiteWebMultiSport.Models.Adherant
+
+@{
+    ViewData["Title"] = "Profil de l'adhérant";
+}
+
+<h2>Profil de @Model.Name</h2>
+
+<ul>
+    <li><strong>Nom :</strong> @Model.Name</li>
+    <li><strong>Date de naissance :</strong> @Model.DateNaissance</li>
+    <li><strong>Email :</strong> @Model.Email</li>
+    <li><strong>Téléphone :</strong> @Model.Phone</li>
+</ul>
+
+<a href="@Url.Action("Login", "Adherant")" class="btn btn-secondary">Déconnexion</a>
+

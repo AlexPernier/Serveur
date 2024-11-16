@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SiteWebMultiSport")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6a23c294edbf4be439dc79072f1fafacc8efe4c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9da49391cd927745e03542ed998e5b7f8f0146d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SiteWebMultiSport")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SiteWebMultiSport")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

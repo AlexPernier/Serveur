@@ -32,6 +32,22 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/projet/M2 MIASHS/Serveur/Serveur/SiteWebMultiSport/SiteWebMultiSport/Views/Adherant/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRoZXJhbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projet/M2 MIASHS/Serveur/Serveur/SiteWebMultiSport/SiteWebMultiSport/Views/Adherant/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRoZXJhbnRcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projet/M2 MIASHS/Serveur/Serveur/SiteWebMultiSport/SiteWebMultiSport/Views/Adherant/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRoZXJhbnRcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projet/M2 MIASHS/Serveur/Serveur/SiteWebMultiSport/SiteWebMultiSport/Views/Adherant/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRoZXJhbnRcU3VjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/projet/M2 MIASHS/Serveur/Serveur/SiteWebMultiSport/SiteWebMultiSport/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
