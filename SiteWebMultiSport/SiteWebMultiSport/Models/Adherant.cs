@@ -20,5 +20,7 @@ namespace SiteWebMultiSport.Models
         [Required(ErrorMessage = "Le numéro de téléphone est obligatoire")]
         [Phone(ErrorMessage = "Le format du numéro de téléphone est invalide")]
         public required string Phone { get; set; }
+
+        public bool IsAdmin { get; set; }
     }
 }

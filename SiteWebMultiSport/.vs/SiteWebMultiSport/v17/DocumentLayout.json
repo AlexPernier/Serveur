@@ -3,48 +3,32 @@
   "WorkspaceRootPath": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\adherant\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\views\\adherant\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\controllers\\adherantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\controllers\\adherantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\models\\adherant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\models\\adherant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -53,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\adherant\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\views\\adherant\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\controllers\\adherantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|solutionrelative:sitewebmultisport\\controllers\\adherantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E4D23A1-39AC-4BD7-ABDC-CF264507CC84}|SiteWebMultiSport\\SiteWebMultiSport.csproj|c:\\projet\\m2 miashs\\serveur\\serveur\\sitewebmultisport\\sitewebmultisport\\views\\adherant\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -87,97 +67,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "SiteWebMultiSport\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAA3AAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "SiteWebMultiSport\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T18:52:05.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "SiteWebMultiSport\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T18:51:53.278Z",
+              "WhenOpened": "2024-11-18T14:14:42.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "SiteWebMultiSport\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T18:51:45.832Z",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "SiteWebMultiSport\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "SiteWebMultiSport\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T14:13:04.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "SiteWebMultiSport\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T18:51:37.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "SiteWebMultiSport\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T18:51:37.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "SiteWebMultiSport\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "RelativeToolTip": "SiteWebMultiSport\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T18:51:19.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Adherant\\Profile.cshtml",
               "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\Adherant\\Profile.cshtml",
               "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Adherant\\Profile.cshtml",
               "RelativeToolTip": "SiteWebMultiSport\\Views\\Adherant\\Profile.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T18:40:39.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Adherant\\Login.cshtml",
               "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\Adherant\\Login.cshtml",
@@ -185,33 +113,19 @@
               "RelativeToolTip": "SiteWebMultiSport\\Views\\Adherant\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T18:40:13.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T18:40:13.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "Adherant.cs",
               "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Models\\Adherant.cs",
               "RelativeDocumentMoniker": "SiteWebMultiSport\\Models\\Adherant.cs",
               "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Models\\Adherant.cs",
               "RelativeToolTip": "SiteWebMultiSport\\Models\\Adherant.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T18:22:17.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "SiteWebMultiSport\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "SiteWebMultiSport\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwCEAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T18:17:23.986Z",
               "EditorCaption": ""
             },
             {
@@ -222,27 +136,27 @@
               "RelativeDocumentMoniker": "SiteWebMultiSport\\Program.cs",
               "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Program.cs",
               "RelativeToolTip": "SiteWebMultiSport\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T17:54:22.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "AdherantController.cs",
               "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Controllers\\AdherantController.cs",
               "RelativeDocumentMoniker": "SiteWebMultiSport\\Controllers\\AdherantController.cs",
               "ToolTip": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Controllers\\AdherantController.cs",
               "RelativeToolTip": "SiteWebMultiSport\\Controllers\\AdherantController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwFIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T18:35:30.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\Home\\Index.cshtml",
@@ -250,12 +164,11 @@
               "RelativeToolTip": "SiteWebMultiSport\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T17:24:12.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T17:24:12.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\appsettings.json",
               "RelativeDocumentMoniker": "SiteWebMultiSport\\appsettings.json",
@@ -263,12 +176,11 @@
               "RelativeToolTip": "SiteWebMultiSport\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-16T17:25:48.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T17:25:48.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 9,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Adherant\\Create.cshtml",
               "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\Adherant\\Create.cshtml",
@@ -276,12 +188,11 @@
               "RelativeToolTip": "SiteWebMultiSport\\Views\\Adherant\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T18:19:29.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T18:19:29.183Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 10,
               "Title": "Success.cshtml",
               "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Views\\Adherant\\Success.cshtml",
               "RelativeDocumentMoniker": "SiteWebMultiSport\\Views\\Adherant\\Success.cshtml",
@@ -289,12 +200,11 @@
               "RelativeToolTip": "SiteWebMultiSport\\Views\\Adherant\\Success.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T18:20:09.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T18:20:09.639Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 12,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "SiteWebMultiSport\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -302,12 +212,11 @@
               "RelativeToolTip": "SiteWebMultiSport\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T18:22:54.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T18:22:54.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 11,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\SiteWebMultiSport\\SiteWebMultiSport\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "SiteWebMultiSport\\Data\\ApplicationDbContext.cs",
@@ -315,8 +224,7 @@
               "RelativeToolTip": "SiteWebMultiSport\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T17:29:13.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T17:29:13.973Z"
             }
           ]
         }

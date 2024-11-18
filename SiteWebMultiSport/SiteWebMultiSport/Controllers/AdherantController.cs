@@ -63,11 +63,14 @@ namespace SiteWebMultiSport.Controllers
             var adherant = _context.Adherants.FirstOrDefault(a => a.Name == name);
             if (adherant == null)
             {
-                ModelState.AddModelError(string.Empty, "Aucun adhérant trouvé avec ce nom.");
+                ModelState.AddModelError(string.Empty, "Aucun adhérent trouvé avec ce nom.");
                 return View();
             }
 
-            // Connexion réussie
+            // Enregistre l'adhérant dans la session
+            HttpContext.Session.SetString("AdherantId", adherant.Id.ToString());
+
+            // Redirige vers le profil ou une autre page
             return RedirectToAction("Profile", new { id = adherant.Id });
         }
 
@@ -80,6 +83,18 @@ namespace SiteWebMultiSport.Controllers
                 return NotFound();
             }
             return View(adherant);
+        }
+
+        //Action pour verifier si l'utilisateur est admin
+        public bool IsUserAdmin()
+        {
+            if (HttpContext.Session.GetString("AdherantId") != null)
+            {
+                var adherantId = int.Parse(HttpContext.Session.GetString("AdherantId"));
+                var adherant = _context.Adherants.FirstOrDefault(a => a.Id == adherantId);
+                return adherant?.IsAdmin ?? false;
+            }
+            return false;
         }
     }
 }

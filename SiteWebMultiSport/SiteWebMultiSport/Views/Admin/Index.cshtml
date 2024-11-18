@@ -1,0 +1,29 @@
+﻿@model IEnumerable<SiteWebMultiSport.Models.Adherant>
+
+<h1>Gestion des Adhérents</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var adherant in Model)
+        {
+            <tr>
+                <td>@adherant.Id</td>
+                <td>@adherant.Name</td>
+                <td>@adherant.Email</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Admin", new { id = adherant.Id })">Modifier</a> |
+                    <a href="@Url.Action("Delete", "Admin", new { id = adherant.Id })">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
