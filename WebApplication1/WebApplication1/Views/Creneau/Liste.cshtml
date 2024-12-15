@@ -1,0 +1,25 @@
+﻿@model List<SiteWebMultiSport.Models.Creneau>
+
+<h2>Liste des créneaux</h2>
+
+@foreach (var creneau in Model)
+{
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">@creneau.Section.Discipline.Nom - @creneau.Section.Nom</h5>
+            <p class="card-text">
+                Jour : @creneau.Jour <br />
+                Heure : @creneau.HeureDebut - @creneau.HeureFin <br />
+                Lieu : @creneau.Lieu <br />
+                Capacités : @creneau.Adherants.Count / @creneau.Capacite
+            </p>
+            <form asp-action="Inscription" method="post">
+                <input type="hidden" name="creneauId" value="@creneau.Id" />
+                <button class="btn btn-primary" @if (creneau.Adherants.Count >= creneau.Capacite)
+                {
+                    <text>disabled</text>
+                }>S'inscrire</button>
+            </form>
+        </div>
+    </div>
+}

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SiteWebMultiSport.Models.Discipline>
+
+<h1>Liste des Disciplines</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var discipline in Model)
+        {
+            <tr>
+                <td>@discipline.Id</td>
+                <td>@discipline.Nom</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@discipline.Id" class="btn btn-danger">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Ajouter une Discipline</a>

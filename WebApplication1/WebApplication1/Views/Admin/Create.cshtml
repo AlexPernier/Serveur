@@ -1,0 +1,53 @@
+﻿@model SiteWebMultiSport.Models.Adherant
+
+@{
+    ViewData["Title"] = "Créer un nouvel adhérent";
+}
+
+<h1>Créer un nouvel adhérent</h1>
+
+<form asp-controller="Admin" asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DateNaissance" class="control-label"></label>
+        <input asp-for="DateNaissance" type="date" class="form-control" />
+        <span asp-validation-for="DateNaissance" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" type="email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Phone" class="control-label"></label>
+        <input asp-for="Phone" type="tel" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+
+    <!-- Champ caché pour IsAdmin -->
+    <div class="form-group">
+        <label asp-for="IsAdmin" class="control-label"></label>
+        <input asp-for="IsAdmin" type="checkbox" value="true" />
+        <span asp-validation-for="IsAdmin" class="text-danger"></span>
+    </div>
+
+    <!-- Champ caché pour IsEncadrant -->
+    <div class="form-group">
+        <label asp-for="IsEncadrant" class="control-label"></label>
+        <input asp-for="IsEncadrant" type="checkbox" value="true" />
+        <span asp-validation-for="IsEncadrant" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">S'inscrire</button>
+</form>
+
+
+
+

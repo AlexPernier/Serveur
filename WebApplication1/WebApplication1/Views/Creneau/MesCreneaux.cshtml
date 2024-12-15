@@ -1,0 +1,24 @@
+﻿@model List<SiteWebMultiSport.Models.Creneau>
+
+<h2>Mes Créneaux</h2>
+
+@if (!Model.Any())
+{
+    <p>Vous n'êtes inscrit à aucun créneau.</p>
+}
+else
+{
+    @foreach (var creneau in Model)
+    {
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">@creneau.Section.Discipline.Nom - @creneau.Section.Nom</h5>
+                <p class="card-text">
+                    Jour : @creneau.Jour <br />
+                    Heure : @creneau.HeureDebut - @creneau.HeureFin <br />
+                    Lieu : @creneau.Lieu
+                </p>
+            </div>
+        </div>
+    }
+}

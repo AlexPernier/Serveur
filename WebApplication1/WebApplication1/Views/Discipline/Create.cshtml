@@ -1,0 +1,13 @@
+﻿@model SiteWebMultiSport.Models.Discipline
+
+<h1>Ajouter une Discipline</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Nom">Nom de la discipline</label>
+        <input asp-for="Nom" class="form-control" />
+        <span asp-validation-for="Nom" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success">Ajouter</button>
+    <a asp-action="Index" class="btn btn-secondary">Annuler</a>
+</form>

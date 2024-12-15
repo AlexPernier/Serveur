@@ -1,0 +1,41 @@
+﻿@model IEnumerable<SiteWebMultiSport.Models.Adherant>
+
+<h1>Gestion des Adhérents</h1>
+
+<a asp-controller="Admin" asp-action="Create" class="btn btn-primary mb-3">Créer un nouvel adhérent</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Date de Naissance</th>
+            <th>Admin</th>
+            <th>Encadrant</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var adherant in Model)
+        {
+            <tr>
+                <td>@adherant.Id</td>
+                <td>@adherant.Name</td>
+                <td>@adherant.Email</td>
+                <td>@adherant.Phone</td>
+                <td>@adherant.DateNaissance</td>
+                <td>@adherant.IsAdmin</td>
+                <td>@adherant.IsEncadrant</td>
+                <td>
+                    <a asp-controller="Admin" asp-action="Edit" asp-route-id="@adherant.Id">Modifier</a> |
+                    <a asp-controller="Admin" asp-action="Delete" asp-route-id="@adherant.Id">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
