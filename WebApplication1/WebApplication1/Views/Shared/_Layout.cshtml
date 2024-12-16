@@ -65,6 +65,9 @@
                                         <li>
                                             <a class="dropdown-item" asp-controller="Admin" asp-action="Index">Gérer le site</a>
                                         </li>
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Document" asp-action="PendingDocuments">Valider les documents</a>
+                                        </li>
                                     }
                                     <!-- Lien vers la page section visible uniquement si l'utilisateur est encadrant -->
                                     @if (HttpContextAccessor.HttpContext.Session.GetString("IsEncadrant") == "true")
@@ -74,6 +77,21 @@
                                             <a class="dropdown-item" asp-controller="Section" asp-action="MesSections">Gérer vos sections</a>
                                         </li>
                                     }
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Documents
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Document" asp-action="MyDocuments">Mes Documents</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Document" asp-action="Upload">Upload un document</a>
+                                    </li>
+                                   
 
                                 </ul>
                             </li>
