@@ -12,6 +12,7 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Discipline> Disciplines { get; set; }
     public DbSet<Section> Sections { get; set; }
     public DbSet<Creneau> Creneaux { get; set; }
+    public DbSet<Document> Documents { get; set; }
 
 
 
