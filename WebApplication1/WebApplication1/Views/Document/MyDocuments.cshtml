@@ -1,0 +1,25 @@
+﻿<h2>Mes documents</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Date d'envoi</th>
+            <th>Statut</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doc in Model)
+        {
+            <tr>
+                <td>@doc.FileName</td>
+                <td>@doc.UploadDate.ToString("g")</td>
+                <td>@(doc.IsValidated ? "Validé" : "En attente")</td>
+                <td>
+                    <a asp-action="Download" asp-route-id="@doc.Id">Télécharger</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,32 @@
+﻿<h2>Documents à valider</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Adhérent</th>
+            <th>Nom</th>
+            <th>Date d'envoi</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doc in Model)
+        {
+            <tr>
+                <td>@(doc.Adherant?.Name ?? "Non spécifié")</td>
+                <td>@doc.FileName</td>
+                <td>@(doc.UploadDate?.ToString("g") ?? "Non spécifié")</td>
+                <td>
+                    <form asp-action="Validate" method="post">
+                        <input type="hidden" name="id" value="@doc.Id" />
+                        <button type="submit">Valider</button>
+                    </form>
+                </td>
+                <td>
+                    <a asp-action="Download" asp-route-id="@doc.Id">Télécharger</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
