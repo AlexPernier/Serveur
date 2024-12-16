@@ -144,19 +144,27 @@ namespace SiteWebMultiSport.Controllers
         [HttpPost]
         public IActionResult Delete(int id)
         {
-            if (!IsAdmin() && !IsEncadrant()) return Unauthorized();
-            var creneau = _context.Creneaux.Find(id);
-            if (creneau != null)
+            var creneau = _context.Creneaux
+                .Include(c => c.Adherants) // Charger les relations avec les adhérents
+                .FirstOrDefault(c => c.Id == id);
+
+            if (creneau == null)
             {
-                _context.Creneaux.Remove(creneau);
-                _context.SaveChanges();
+                return NotFound();
             }
-            var referer = Request.Headers["Referer"].ToString(); // Récupère l'URL précédente
-            if (!string.IsNullOrEmpty(referer))
-            {
-                return Redirect(referer); // Redirige vers la page précédente
-            }
-            return RedirectToAction("Index");
+
+            // Supprimer manuellement les relations dans la table de jointure
+            _context.Entry(creneau).Collection(c => c.Adherants).Load();
+            creneau.Adherants.Clear(); // Supprime toutes les relations
+            _context.SaveChanges();
+
+            // Ensuite, supprimer le créneau
+            _context.Creneaux.Remove(creneau);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Section");
+
         }
+
     }
 }

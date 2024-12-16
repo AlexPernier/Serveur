@@ -25,7 +25,10 @@ namespace SiteWebMultiSport.Models
 
         public bool IsEncadrant { get; set; }
 
-   
+        public bool IsEmail { get; set; } = true;
+
+        // Propriété de navigation pour Creneaux
+        public List<Creneau> Creneaux { get; set; } = new();
 
     }
 }

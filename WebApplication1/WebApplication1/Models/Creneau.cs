@@ -29,8 +29,9 @@ namespace SiteWebMultiSport.Models
         public int SectionId { get; set; } // Clé étrangère
         [ForeignKey("SectionId")]
         public Section Section { get; set; } // Navigation property
-
-        public List<Adherant> Adherants { get;} = [];
+                                             
+        // Propriété de navigation pour Adherants
+        public List<Adherant> Adherants { get; set; } = new();
 
     }
 }
