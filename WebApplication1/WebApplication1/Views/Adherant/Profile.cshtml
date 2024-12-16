@@ -6,14 +6,14 @@
 
 <h2>Profil de @Model.Name</h2>
 
-<ul>
-    <li><strong>Nom :</strong> @Model.Name</li>
-    <li><strong>Date de naissance :</strong> @Model.DateNaissance</li>
-    <li><strong>Email :</strong> @Model.Email</li>
-    <li><strong>Téléphone :</strong> @Model.Phone</li>
-    <li><strong>Encadrant :</strong> @Model.IsEncadrant</li>
+<ul class="list-group w-50 ">
+    <li class="list-group-item d-flex justify-content-between align-items-center"><strong>Nom :</strong> <span>@Model.Name</span></li>
+    <li class="list-group-item d-flex justify-content-between align-items-center"><strong>Date de naissance :</strong> <span>@Model.DateNaissance</span></liclass="list-group-item>
+<li class="list-group-item d-flex justify-content-between align-items-center"><strong>Email :</strong> <span>@Model.Email</span></li>
+    <li class="list-group-item d-flex justify-content-between align-items-center"><strong>Téléphone :</strong> <span>@Model.Phone</span></li>
+    <li class="list-group-item d-flex justify-content-between align-items-center"><strong>Encadrant :</strong> <span><input type="checkbox" class="form-check-input" id="isChecked" name="isChecked" @(@Model.IsEncadrant ? "checked" : "") disabled /></span></li>
 
 </ul>
 
-<a href="@Url.Action("Login", "Adherant")" class="btn btn-secondary">Déconnexion</a>
+<a href="@Url.Action("Login", "Adherant")" class="btn btn-secondary mt-2">Déconnexion</a>
 

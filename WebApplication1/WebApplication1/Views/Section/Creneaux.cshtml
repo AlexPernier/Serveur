@@ -2,10 +2,12 @@
 
 <h2>Créneaux pour la section @Model.Nom</h2>
 
-<a asp-controller="Creneau" asp-action="Create" asp-route-sectionId="@Model.Id" class="btn btn-primary mb-3">
+
+<a asp-controller="Creneau" asp-action="Create" asp-route-sectionId="@Model.Id" class="btn btn-primary">
     Ajouter un créneau
 </a>
 
+<button onclick="window.history.back();" class="btn btn-secondary">Retour</button>
 <table class="table">
     <thead>
         <tr>
@@ -19,28 +21,29 @@
     <tbody>
         @if (Model.Creneaux != null && Model.Creneaux.Any())
         {
-            @foreach (var creneau in Model.Creneaux)
+        @foreach (var creneau in Model.Creneaux)
             {
-                <tr>
-                    <td>@creneau.Jour</td>
-                    <td>@creneau.HeureDebut</td>
-                    <td>@creneau.HeureFin</td>
-                    <td>@creneau.Lieu</td>
-                    <td>@creneau.Capacite</td>
-                    <td>
-                        <form asp-action="Delete" asp-controller="Creneau" method="post">
-                            <input type="hidden" name="id" value="@creneau.Id" />
-                            <button type="submit" class="btn btn-danger">Supprimer</button>
-                        </form>
-                    </td>
-                </tr>
+        <tr>
+            <td>@creneau.Jour</td>
+            <td>@creneau.HeureDebut</td>
+            <td>@creneau.HeureFin</td>
+            <td>@creneau.Lieu</td>
+            <td>@creneau.Capacite</td>
+            <td>
+                <form asp-action="Delete" asp-controller="Creneau" method="post">
+                    <input type="hidden" name="id" value="@creneau.Id" />
+                    <button type="submit" class="btn btn-danger">Supprimer</button>
+                </form>
+            </td>
+        </tr>
             }
         }
         else
         {
-            <tr>
-                <td colspan="5" class="text-center">Aucun créneau disponible pour cette section.</td>
-            </tr>
+        <tr>
+            <td colspan="5" class="text-center">Aucun créneau disponible pour cette section.</td>
+        </tr>
         }
     </tbody>
 </table>
+

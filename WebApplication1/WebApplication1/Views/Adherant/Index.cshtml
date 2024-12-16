@@ -1,24 +1,26 @@
 ﻿@model IEnumerable<SiteWebMultiSport.Models.Adherant>
 
-<h1>Gestion des Adhérents</h1>
+    <h1>Gestion des Adhérents</h1>
 
-<a asp-controller="Admin" asp-action="Create" class="btn btn-primary mb-3">Créer un nouvel adhérent</a>
+    <a asp-controller="Admin" asp-action="Create" class="btn btn-primary">Créer un nouvel adhérent</a>
 
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Date de Naissance</th>
-            <th>Admin</th>
-            <th>Encadrant</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var adherant in Model)
+    <button onclick="window.history.back();" class="btn btn-secondary">Retour</button>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Date de Naissance</th>
+                <th scope="col">Admin</th>
+                <th scope="col">Encadrant</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var adherant in Model)
         {
             <tr>
                 <td>@adherant.Id</td>
@@ -26,16 +28,16 @@
                 <td>@adherant.Email</td>
                 <td>@adherant.Phone</td>
                 <td>@adherant.DateNaissance</td>
-                <td>@adherant.IsAdmin</td>
-                <td>@adherant.IsEncadrant</td>
+                <td><input type="checkbox" class="form-check-input" id="isChecked" name="isChecked" @(@adherant.IsAdmin ? "checked" : "") disabled /></td>
+                <td><input type="checkbox" class="form-check-input" id="isChecked" name="isChecked" @(@adherant.IsEncadrant ? "checked" : "") disabled /></td>
                 <td>
-                    <a asp-controller="Admin" asp-action="Edit" asp-route-id="@adherant.Id">Modifier</a> |
-                    <a asp-controller="Admin" asp-action="Delete" asp-route-id="@adherant.Id">Supprimer</a>
+                    <a class="btn btn-warning" asp-controller="Admin" asp-action="Edit" asp-route-id="@adherant.Id">Modifier</a>
+                    <a class="btn btn-danger" asp-controller="Admin" asp-action="Delete" asp-route-id="@adherant.Id">Supprimer</a>
                 </td>
             </tr>
         }
-    </tbody>
-</table>
+        </tbody>
+    </table>
 
 
 

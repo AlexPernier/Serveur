@@ -12,32 +12,30 @@
     <!-- Nom de la section -->
     <div class="form-group">
         <label for="Nom">Nom</label>
-        <input 
-            type="text" 
-            id="Nom" 
-            name="Nom" 
-            value="@Model.Nom" 
-            class="form-control" 
-            required />
+        <input type="text"
+               id="Nom"
+               name="Nom"
+               value="@Model.Nom"
+               class="form-control"
+               required />
     </div>
 
     <!-- Sélection de la discipline -->
     <div class="form-group">
         <label for="DisciplineId">Discipline</label>
-        <select 
-            id="DisciplineId" 
-            name="DisciplineId" 
-            class="form-control" 
-            required>
+        <select id="DisciplineId"
+                name="DisciplineId"
+                class="form-control"
+                required>
             @foreach (var discipline in ViewBag.Disciplines)
             {
                 if (discipline.Id == Model.DisciplineId)
                 {
-                    <option value="@discipline.Id" selected="selected">@discipline.Nom</option>
+            <option value="@discipline.Id" selected="selected">@discipline.Nom</option>
                 }
                 else
                 {
-                    <option value="@discipline.Id">@discipline.Nom</option>
+            <option value="@discipline.Id">@discipline.Nom</option>
                 }
             }
         </select>
@@ -46,24 +44,25 @@
     <!-- Sélection de l'encadrant -->
     <div class="form-group">
         <label for="EncadrantId">Encadrant</label>
-        <select 
-            id="EncadrantId" 
-            name="EncadrantId" 
-            class="form-control" 
-            required>
+        <select id="EncadrantId"
+                name="EncadrantId"
+                class="form-control"
+                required>
             @foreach (var encadrant in ViewBag.Encadrants)
             {
                 if (encadrant.Id == Model.DisciplineId)
                 {
-                    <option value="@encadrant.Id" selected="selected">@encadrant.Name</option>
+            <option value="@encadrant.Id" selected="selected">@encadrant.Name</option>
                 }
                 else
                 {
-                    <option value="@encadrant.Id">@encadrant.Name</option>
+            <option value="@encadrant.Id">@encadrant.Name</option>
                 }
             }
         </select>
     </div>
 
-    <button type="submit" class="btn btn-primary">Modifier</button>
+    <button type="submit" class="btn btn-primary mt-2">Modifier</button>
 </form>
+<button onclick="window.history.back();" class="btn btn-secondary mt-2">Retour</button>
+

@@ -1,17 +1,19 @@
 ﻿@model IEnumerable<SiteWebMultiSport.Models.Discipline>
 
-<h1>Liste des Disciplines</h1>
+    <h1>Liste des Disciplines</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nom</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var discipline in Model)
+    <a asp-action="Create" class="btn btn-primary">Ajouter une Discipline</a>
+    <button onclick="window.history.back();" class="btn btn-secondary">Retour</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var discipline in Model)
         {
             <tr>
                 <td>@discipline.Id</td>
@@ -21,7 +23,6 @@
                 </td>
             </tr>
         }
-    </tbody>
-</table>
+        </tbody>
+    </table>
 
-<a asp-action="Create" class="btn btn-primary">Ajouter une Discipline</a>

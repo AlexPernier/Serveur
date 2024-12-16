@@ -1,18 +1,21 @@
 ﻿@model IEnumerable<dynamic>
 
-<h2>Gérer les Sections</h2>
+    <h2>Gérer les Sections</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nom</th>
-            <th>Discipline</th>
-            <th>Encadrant</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var sections in Model)
+    <a asp-action="Create" class="btn btn-primary">Créer une nouvelle Section</a>
+    <button onclick="window.history.back();" class="btn btn-secondary">Retour</button>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Discipline</th>
+                <th>Encadrant</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var sections in Model)
         {
             <tr>
                 <td>@sections.Nom</td>
@@ -28,7 +31,7 @@
                 </td>
             </tr>
         }
-    </tbody>
-</table>
 
-<a asp-action="Create" class="btn btn-primary">Créer une nouvelle Section</a>
+        </tbody>
+    </table>
+
