@@ -17,217 +17,117 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplication1
 build_property.RootNamespace = WebApplication1
-build_property.ProjectDir = C:\projet\M2 MIASHS\Serveur\Serveur\WebApplication1\WebApplication1\
+build_property.ProjectDir = C:\Users\STFoundation\Documents\Master\serveur\Serveur\WebApplication1\WebApplication1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\projet\M2 MIASHS\Serveur\Serveur\WebApplication1\WebApplication1
+build_property.MSBuildProjectDirectory = C:\Users\STFoundation\Documents\Master\serveur\Serveur\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Adherant/Create.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Adherant/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRoZXJhbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Adherant/Index.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Adherant/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRoZXJhbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Adherant/Login.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Adherant/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRoZXJhbnRcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Adherant/Profile.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Adherant/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRoZXJhbnRcUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Adherant/Success.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Adherant/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRoZXJhbnRcU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Admin/Create.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Admin/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Admin/Index.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Creneau/Create.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Creneau/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlbmVhdVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Creneau/Liste.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Creneau/Liste.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlbmVhdVxMaXN0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Creneau/MesCreneaux.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Creneau/MesCreneaux.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlbmVhdVxNZXNDcmVuZWF1eC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Discipline/Create.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Discipline/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2lwbGluZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Discipline/Index.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Discipline/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2lwbGluZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Home/Index.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Home/Privacy.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Section/Create.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Section/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Section/Creneaux.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Section/Creneaux.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvblxDcmVuZWF1eC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Section/Edit.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Section/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Section/Index.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Section/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Section/MesSections.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Section/MesSections.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvblxNZXNTZWN0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Shared/Error.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Adherant/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcQWRoZXJhbnRcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Adherant/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcQWRoZXJhbnRcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Adherant/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcQWRoZXJhbnRcTG9naW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Adherant/MesCreneaux.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcQWRoZXJhbnRcTWVzQ3JlbmVhdXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Adherant/Profile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcQWRoZXJhbnRcUHJvZmlsZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Adherant/Success.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcQWRoZXJhbnRcU3VjY2Vzcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Admin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Admin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Creneau/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcQ3JlbmVhdVxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Creneau/Liste.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcQ3JlbmVhdVxMaXN0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Discipline/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcRGlzY2lwbGluZVxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Discipline/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcRGlzY2lwbGluZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Section/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2VjdGlvblxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Section/Creneaux.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2VjdGlvblxDcmVuZWF1eC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Section/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2VjdGlvblxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Section/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2VjdGlvblxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Section/MesSections.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2VjdGlvblxNZXNTZWN0aW9ucy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/_ViewImports.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/_ViewStart.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Shared/_Layout.cshtml]
+[C:/Users/STFoundation/Documents/Master/serveur/Serveur/WebApplication1/WebApplication1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bddmc6yalx
-
-[C:/projet/M2 MIASHS/Serveur/Serveur/WebApplication1/WebApplication1/Views/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-entlatj3kg

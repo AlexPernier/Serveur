@@ -140,9 +140,23 @@ namespace SiteWebMultiSport.Controllers
         }
 
 
-
-
-
-
+        // Supprimer un créneau
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            if (!IsAdmin() && !IsEncadrant()) return Unauthorized();
+            var creneau = _context.Creneaux.Find(id);
+            if (creneau != null)
+            {
+                _context.Creneaux.Remove(creneau);
+                _context.SaveChanges();
+            }
+            var referer = Request.Headers["Referer"].ToString(); // Récupère l'URL précédente
+            if (!string.IsNullOrEmpty(referer))
+            {
+                return Redirect(referer); // Redirige vers la page précédente
+            }
+            return RedirectToAction("Index");
+        }
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\STFoundation\\Documents\\Master\\serveur\\Serveur\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\STFoundation\\Documents\\Master\\serveur\\Serveur\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\STFoundation\\Documents\\Master\\serveur\\Serveur\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\projet\\M2 MIASHS\\Serveur\\Serveur\\WebApplication1\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\STFoundation\\Documents\\Master\\serveur\\Serveur\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\STFoundation\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\STFoundation\\Documents\\Master\\serveur\\Serveur\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\STFoundation\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
