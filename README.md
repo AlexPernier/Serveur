@@ -64,4 +64,4 @@ Si vous êtes un adhérent encadrant, vous pouvez gérer les créneaux de votre 
 
 #### Inscription et gestion des adhérents
 Les adhérents peuvent s'inscrire à des créneaux via l'interface utilisateur, sous réserve d'avoir un abonnement valide.
-Ils peuvent donc s'abonner si ce n'est pas déjà fais et envoyer des documents si besoin qu'un administrateurr peut valider.
+Ils peuvent donc s'abonner si ce n'est pas déjà fais et envoyer des documents si besoin qu'un administrateur peut valider.
