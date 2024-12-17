@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SiteWebMultiSport</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Creneau" asp-action="MesCreneaux">SiteWebMultiSport</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -102,12 +102,18 @@
                                         <a class="dropdown-item" asp-controller="Creneau" asp-action="MesCreneaux">Mes Créneaux</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" asp-controller="Creneau" asp-action="Liste">S'inscrire à des créneaux'</a>
+                                        <a class="dropdown-item" asp-controller="Creneau" asp-action="Liste">S'inscrire à des créneaux</a>
                                     </li>
 
 
                                 </ul>
                             </li>
+                            @if (HttpContextAccessor.HttpContext.Session.GetString("IsSubscribed") == "false")
+                            {     
+                                <li>
+                                    <a class="nav-link dropdown-toggle text-dark" asp-controller="Payment" asp-action="PaySubscription">S'abonner</a>
+                                </li>
+                            }
                         }
                     </ul>
                 </div>

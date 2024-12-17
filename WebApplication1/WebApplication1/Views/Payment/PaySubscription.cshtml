@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Abonnement Payant";
+}
+
+<h2>Abonnement</h2>
+<p>Veuillez payer pour vous inscrire aux créneaux.</p>
+
+<form asp-action="PaySubscription" method="post">
+    <input type="hidden" name="adherantId" value="@Context.Session.GetString("AdherantId")" />
+    <button type="submit" class="btn btn-primary">Payer l'abonnement (50€)</button>
+</form>

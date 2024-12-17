@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SiteWebMultiSport.Models;
+using WebApplication1.Models;
 
 public class ApplicationDbContext : IdentityDbContext
 {
@@ -13,6 +14,7 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Section> Sections { get; set; }
     public DbSet<Creneau> Creneaux { get; set; }
     public DbSet<Document> Documents { get; set; }
+    public DbSet<Payment> Payments { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

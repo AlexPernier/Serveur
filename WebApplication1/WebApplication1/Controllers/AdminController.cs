@@ -1,112 +1,140 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SiteWebMultiSport.Helpers;
 using SiteWebMultiSport.Models;
+using WebApplication1.Migrations;
+using SiteWebMultiSport.Helpers;
 
-public class AdminController : Controller
+namespace SiteWebMultiSport.Controllers
 {
-    private readonly ApplicationDbContext _context;
-
-    public AdminController(ApplicationDbContext context)
+    public class AdminController : Controller
     {
-        _context = context;
-    }
+        private readonly ApplicationDbContext _context;
 
-    public IActionResult Index()
-    {
-        if (!IsUserAdmin())
+        public AdminController(ApplicationDbContext context)
         {
-            return Unauthorized(); // Redirige si l'utilisateur n'est pas admin
+            _context = context;
         }
 
-        var adherants = _context.Adherants.ToList();
-        return View(adherants);
-    }
-
-    [HttpGet]
-    public IActionResult Edit(int id)
-    {
-        if (!IsUserAdmin())
+        public IActionResult Index()
         {
-            return Unauthorized();
+            if (!IsUserAdmin())
+            {
+                return Unauthorized(); // Redirige si l'utilisateur n'est pas admin
+            }
+
+            var adherants = _context.Adherants.ToList();
+            return View(adherants);
         }
 
-        var adherant = _context.Adherants.FirstOrDefault(a => a.Id == id);
-        if (adherant == null)
+        [HttpGet]
+        public IActionResult Edit(int id)
         {
-            return NotFound();
+            if (!IsUserAdmin())
+            {
+                return Unauthorized();
+            }
+
+            var adherant = _context.Adherants.FirstOrDefault(a => a.Id == id);
+            if (adherant == null)
+            {
+                return NotFound();
+            }
+
+            return View(adherant);
         }
 
-        return View(adherant);
-    }
-
-    [HttpPost]
-    public IActionResult Edit(Adherant adherant)
-    {
-        if (!IsUserAdmin())
+        [HttpPost]
+        public IActionResult Edit(Adherant adherant, string Password)
         {
-            return Unauthorized();
-        }
+            if (!IsUserAdmin())
+            {
+                return Unauthorized();
+            }
 
-        if (ModelState.IsValid)
-        {
-            _context.Adherants.Update(adherant);
+            var existingAdherant = _context.Adherants.FirstOrDefault(a => a.Id == adherant.Id);
+            if (existingAdherant == null)
+            {
+                return NotFound();
+            }
+
+            // Met à jour les champs existants
+            existingAdherant.Name = adherant.Name;
+            existingAdherant.Email = adherant.Email;
+            existingAdherant.DateNaissance = adherant.DateNaissance;
+            existingAdherant.Phone = adherant.Phone;
+            existingAdherant.IsAdmin = adherant.IsAdmin;
+            existingAdherant.IsEncadrant = adherant.IsEncadrant;
+            existingAdherant.IsSubscribed = adherant.IsSubscribed;
+
+            // Si un nouveau mot de passe est fourni, le hacher
+            if (!string.IsNullOrEmpty(Password))
+            {
+                existingAdherant.PasswordHash = PasswordHelper.HashPassword(Password);
+            }
+
+            _context.Adherants.Update(existingAdherant);
             _context.SaveChanges();
+
             return RedirectToAction("Index");
         }
 
-        return View(adherant);
-    }
 
-    public IActionResult Delete(int id)
-    {
-        if (!IsUserAdmin())
+        public IActionResult Delete(int id)
         {
-            return Unauthorized();
-        }
+            if (!IsUserAdmin())
+            {
+                return Unauthorized();
+            }
 
-        var adherant = _context.Adherants.FirstOrDefault(a => a.Id == id);
-        if (adherant != null)
-        {
-            _context.Adherants.Remove(adherant);
-            _context.SaveChanges();
-        }
+            var adherant = _context.Adherants.FirstOrDefault(a => a.Id == id);
+            if (adherant != null)
+            {
+                _context.Adherants.Remove(adherant);
+                _context.SaveChanges();
+            }
 
-        return RedirectToAction("Index");
-    }
-
-    private bool IsUserAdmin()
-    {
-        if (HttpContext.Session.GetString("AdherantId") != null)
-        {
-            var adherantId = int.Parse(HttpContext.Session.GetString("AdherantId"));
-            var adherant = _context.Adherants.FirstOrDefault(a => a.Id == adherantId);
-            return adherant?.IsAdmin ?? false;
-        }
-        return false;
-    }
-
-    [HttpGet]
-    public IActionResult Create()
-    {
-        return View();
-    }
-
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public IActionResult Create(Adherant adherant)
-    {
-        if (ModelState.IsValid)
-        {
-            Console.WriteLine(adherant);
-            _context.Adherants.Add(adherant);
-            _context.SaveChanges();
             return RedirectToAction("Index");
         }
 
-        return View(adherant);  // Renvoyer la vue avec les erreurs de validation si le modèle n'est pas valide
+        private bool IsUserAdmin()
+        {
+            if (HttpContext.Session.GetString("AdherantId") != null)
+            {
+                var adherantId = int.Parse(HttpContext.Session.GetString("AdherantId"));
+                var adherant = _context.Adherants.FirstOrDefault(a => a.Id == adherantId);
+                return adherant?.IsAdmin ?? false;
+            }
+            return false;
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Adherant adherant, string Password)
+        {
+           
+            
+                Console.WriteLine(adherant);
+                // Hache le mot de passe avant de l'enregistrer
+                adherant.PasswordHash = PasswordHelper.HashPassword(Password);
+                _context.Adherants.Add(adherant);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            
+
+            return View(adherant);  // Renvoyer la vue avec les erreurs de validation si le modèle n'est pas valide
+        }
+
+
+
+
     }
-
-
-
 
 }
+
 

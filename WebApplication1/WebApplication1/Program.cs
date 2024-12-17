@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-
+using SiteWebMultiSport.Data;
 using SiteWebMultiSport.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -64,24 +64,10 @@ app.MapRazorPages()
 // Configuration d'un adhérent administrateur au démarrage
 using (var scope = app.Services.CreateScope())
 {
-    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-
-    // Vérifie si un administrateur existe déjà
-    if (!context.Adherants.Any(a => a.IsAdmin))
-    {
-        // Ajoute un administrateur par défaut
-        var admin = new Adherant
-        {
-            Name = "Admin",
-            DateNaissance = "1990-01-01",
-            Email = "admin@example.com",
-            Phone = "0123456789",
-            IsAdmin = true,
-            IsEncadrant = true,
-        };
-        context.Adherants.Add(admin);
-        context.SaveChanges();
-    }
+ 
+        var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+        DataSeeder.SeedDatabase(context);
+    
 }
 
 app.Run();

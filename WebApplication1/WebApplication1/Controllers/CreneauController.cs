@@ -73,14 +73,36 @@ namespace SiteWebMultiSport.Controllers
 
         public IActionResult Liste()
         {
+            var adherantId = HttpContext.Session.GetString("AdherantId");
+            if (adherantId == null)
+            {
+                return Unauthorized();
+            }
+
             var creneaux = _context.Creneaux
                 .Include(c => c.Section)
                 .ThenInclude(s => s.Discipline)
                 .Include(c => c.Adherants) // Charger les inscriptions
+                .Where(c => !c.Adherants.Any(a => a.Id == int.Parse(adherantId))) // Exclure les créneaux déjà inscrits
                 .ToList();
 
             return View(creneaux);
         }
+
+        public IActionResult Details(int id)
+        {
+            var creneau = _context.Creneaux
+                .Include(c => c.Adherants) // Inclure les adhérents associés
+                .FirstOrDefault(c => c.Id == id);
+
+            if (creneau == null)
+            {
+                return NotFound();
+            }
+
+            return View(creneau); // Retourner la vue avec le créneau et ses adhérents
+        }
+
 
         [HttpPost]
         public IActionResult Inscription(int creneauId)
@@ -89,6 +111,19 @@ namespace SiteWebMultiSport.Controllers
             if (adherantId == null)
             {
                 return Unauthorized();
+            }
+
+            var adherant = _context.Adherants.FirstOrDefault(a => a.Id == int.Parse(adherantId));
+            if (adherant == null)
+            {
+                return Unauthorized();
+            }
+
+            // Vérifier si l'adhérent est abonné
+            if (!adherant.IsSubscribed)
+            {
+                TempData["ErrorMessage"] = "Vous devez payer un abonnement pour vous inscrire.";
+                return RedirectToAction("PaySubscription", "Payment");
             }
 
             var creneau = _context.Creneaux
@@ -106,11 +141,7 @@ namespace SiteWebMultiSport.Controllers
                 return RedirectToAction("Liste");
             }
 
-            var adherant = _context.Adherants.FirstOrDefault(a => a.Id == int.Parse(adherantId));
-            if (adherant == null)
-            {
-                return Unauthorized();
-            }
+          
 
             if (!creneau.Adherants.Contains(adherant))
             {
@@ -120,6 +151,61 @@ namespace SiteWebMultiSport.Controllers
 
             return RedirectToAction("Liste");
         }
+
+        //Méthode pour un adhérent qui souhaite se déinscrire
+        [HttpPost]
+        public IActionResult Desinscription(int creneauId)
+        {
+            var adherantId = HttpContext.Session.GetString("AdherantId");
+            if (adherantId == null)
+            {
+                return Unauthorized();
+            }
+
+            // Récupérer l'adhérent
+            var adherant = _context.Adherants
+                .Include(a => a.Creneaux)
+                .FirstOrDefault(a => a.Id == int.Parse(adherantId));
+
+            if (adherant == null)
+            {
+                return NotFound();
+            }
+
+            // Retirer le créneau de la liste des créneaux de l'adhérent
+            var creneau = adherant.Creneaux.FirstOrDefault(c => c.Id == creneauId);
+            if (creneau != null)
+            {
+                adherant.Creneaux.Remove(creneau);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("MesCreneaux"); // Rediriger vers la vue des créneaux inscrits
+        }
+
+        //Méthode pour un admin ou un encadrant qui souhaite désinscrire un adhérant x d'un créneau y
+        [HttpPost]
+        public IActionResult Desinscrire(int creneauId, int adherantId)
+        {
+            var creneau = _context.Creneaux
+                .Include(c => c.Adherants)
+                .FirstOrDefault(c => c.Id == creneauId);
+
+            if (creneau == null)
+            {
+                return NotFound();
+            }
+
+            var adherant = creneau.Adherants.FirstOrDefault(a => a.Id == adherantId);
+            if (adherant != null)
+            {
+                creneau.Adherants.Remove(adherant);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("Details", new { id = creneauId });
+        }
+
 
         public IActionResult MesCreneaux()
         {

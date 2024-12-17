@@ -16,8 +16,15 @@ else
                 <p class="card-text">
                     Jour : @creneau.Jour <br />
                     Heure : @creneau.HeureDebut - @creneau.HeureFin <br />
-                    Lieu : @creneau.Lieu
+                    Lieu : @creneau.Lieu <br />
+                    Capacités : @creneau.Adherants.Count / @creneau.Capacite
                 </p>
+
+                <!-- Formulaire pour se désinscrire -->
+                <form asp-action="Desinscription" method="post">
+                    <input type="hidden" name="creneauId" value="@creneau.Id" />
+                    <button type="submit" class="btn btn-danger">Se désinscrire</button>
+                </form>
             </div>
         </div>
     }

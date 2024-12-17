@@ -167,7 +167,8 @@ namespace SiteWebMultiSport.Controllers
         public IActionResult Creneaux(int id)
         {
             var section = _context.Sections
-                .Include(s => s.Creneaux)
+                .Include(s => s.Creneaux)                // Inclut les créneaux
+                    .ThenInclude(c => c.Adherants)       // Inclut les adhérents pour chaque créneau
                 .FirstOrDefault(s => s.Id == id);
 
             if (section == null)
@@ -177,6 +178,7 @@ namespace SiteWebMultiSport.Controllers
 
             return View(section);
         }
+
 
         public IActionResult MesSections()
         {

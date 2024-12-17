@@ -12,8 +12,8 @@
 <li class="list-group-item d-flex justify-content-between align-items-center"><strong>Email :</strong> <span>@Model.Email</span></li>
     <li class="list-group-item d-flex justify-content-between align-items-center"><strong>Téléphone :</strong> <span>@Model.Phone</span></li>
     <li class="list-group-item d-flex justify-content-between align-items-center"><strong>Encadrant :</strong> <span><input type="checkbox" class="form-check-input" id="isChecked" name="isChecked" @(@Model.IsEncadrant ? "checked" : "") disabled /></span></li>
-
+    <li class="list-group-item d-flex justify-content-between align-items-center"><strong>Abonnement :</strong> <span><input type="checkbox" class="form-check-input" id="isChecked" name="isChecked" @(@Model.IsSubscribed ? "checked" : "") disabled /></span></li>
 </ul>
 
-<a href="@Url.Action("Login", "Adherant")" class="btn btn-secondary mt-2">Déconnexion</a>
+
 

@@ -28,13 +28,19 @@
             <td>@creneau.HeureDebut</td>
             <td>@creneau.HeureFin</td>
             <td>@creneau.Lieu</td>
-            <td>@creneau.Capacite</td>
-            <td>
-                <form asp-action="Delete" asp-controller="Creneau" method="post">
-                    <input type="hidden" name="id" value="@creneau.Id" />
-                    <button type="submit" class="btn btn-danger">Supprimer</button>
-                </form>
-            </td>
+            <td>@creneau.Adherants.Count / @creneau.Capacite</td>
+                    <td>
+                        <form asp-action="Delete" asp-controller="Creneau" method="post">
+                            <input type="hidden" name="id" value="@creneau.Id" />
+                            <button type="submit" class="btn btn-danger">Supprimer</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-controller="Creneau" asp-route-id="@creneau.Id" class="btn btn-info">
+                            Voir les adhérents
+                        </a>
+                    </td>
+
         </tr>
             }
         }

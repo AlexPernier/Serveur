@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SiteWebMultiSport.Models;
+using SiteWebMultiSport.Helpers;
 
 namespace SiteWebMultiSport.Controllers
 {
@@ -33,16 +34,19 @@ namespace SiteWebMultiSport.Controllers
         // Action pour traiter l'inscription
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Adherant adherant)
+        public IActionResult Create(Adherant adherant, string Password)
         {
 
-            if (ModelState.IsValid)
-            {
+           
+
+                // Hache le mot de passe avant de l'enregistrer
+                adherant.PasswordHash = PasswordHelper.HashPassword(Password);
+
                 _context.Adherants.Add(adherant);
                 _context.SaveChanges();
                 return RedirectToAction("Success");
-            }
-            return View(adherant);
+            
+        
         }
 
         // Page de confirmation avec la liste des adhérents
@@ -62,7 +66,7 @@ namespace SiteWebMultiSport.Controllers
         // Action pour traiter le formulaire de connexion
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Login(string name)
+        public IActionResult Login(string name, string password)
         {
             if (string.IsNullOrEmpty(name))
             {
@@ -78,11 +82,20 @@ namespace SiteWebMultiSport.Controllers
                 return View();
             }
 
+            // Vérifiez si le mot de passe haché correspond
+            if (!PasswordHelper.VerifyPassword(password, adherant.PasswordHash))
+            {
+                // Si le mot de passe est incorrect
+                ViewData["ErrorMessage"] = "Nom ou mot de passe incorrect.";
+                return View();
+            }
+
             // Enregistre les informations importantes dans la session
             HttpContext.Session.SetString("AdherantId", adherant.Id.ToString());
             HttpContext.Session.SetString("AdherantName", adherant.Name); // Nom de l'adhérent
             HttpContext.Session.SetString("IsAdmin", adherant.IsAdmin ? "true" : "false"); // Détermine si l'adhérent est un admin
             HttpContext.Session.SetString("IsEncadrant", adherant.IsEncadrant ? "true" : "false"); // Détermine si l'adhérent est un encadrant
+            HttpContext.Session.SetString("IsSubscribed", adherant.IsSubscribed ? "true" : "false"); // Détermine si l'adhérent est un abonné
 
             // Redirection conditionnelle en fonction du rôle
             if (adherant.IsAdmin)

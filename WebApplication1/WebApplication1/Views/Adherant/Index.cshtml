@@ -16,6 +16,7 @@
                 <th scope="col">Date de Naissance</th>
                 <th scope="col">Admin</th>
                 <th scope="col">Encadrant</th>
+                <th scope="col">Abonné</th>
                 <th scope="col">Actions</th>
             </tr>
         </thead>
@@ -30,6 +31,7 @@
                 <td>@adherant.DateNaissance</td>
                 <td><input type="checkbox" class="form-check-input" id="isChecked" name="isChecked" @(@adherant.IsAdmin ? "checked" : "") disabled /></td>
                 <td><input type="checkbox" class="form-check-input" id="isChecked" name="isChecked" @(@adherant.IsEncadrant ? "checked" : "") disabled /></td>
+                <td><input type="checkbox" class="form-check-input" id="isChecked" name="isChecked" @(@adherant.IsSubscribed ? "checked" : "") disabled /></td>
                 <td>
                     <a class="btn btn-warning" asp-controller="Admin" asp-action="Edit" asp-route-id="@adherant.Id">Modifier</a>
                     <a class="btn btn-danger" asp-controller="Admin" asp-action="Delete" asp-route-id="@adherant.Id">Supprimer</a>

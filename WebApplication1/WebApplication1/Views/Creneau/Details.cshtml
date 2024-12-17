@@ -1,0 +1,39 @@
+﻿@model SiteWebMultiSport.Models.Creneau
+
+<h2>Adhérents inscrits au créneau - @Model.Jour (@Model.HeureDebut - @Model.HeureFin)</h2>
+
+<button onclick="window.history.back();" class="btn btn-secondary mb-3">Retour</button>
+
+@if (Model.Adherants != null && Model.Adherants.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var adherant in Model.Adherants)
+            {
+                <tr>
+                    <td>@adherant.Name</td>
+                    <td>@adherant.Email</td>
+                    <td>
+                        <form asp-action="Desinscrire" method="post">
+                            <input type="hidden" name="creneauId" value="@Model.Id" />
+                            <input type="hidden" name="adherantId" value="@adherant.Id" />
+                            <button type="submit" class="btn btn-danger">❌ Désinscrire</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Aucun adhérent inscrit à ce créneau.</p>
+}
+
