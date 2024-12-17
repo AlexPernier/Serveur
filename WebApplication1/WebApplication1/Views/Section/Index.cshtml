@@ -22,9 +22,10 @@
                 <td>@sections.Discipline</td>
                 <td>@sections.Encadrant</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@sections.Id" class="btn btn-sm btn-warning">Modifier</a>
-                    <form asp-action="Delete" asp-route-id="@sections.Id" method="post" style="display:inline;" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cette section ?');">
-                        <button type="submit" class="btn btn-sm btn-danger">Supprimer</button>
+                    <a asp-controller="Section"  asp-action="Edit" asp-route-id="@sections.Id" class="btn btn-sm btn-warning">Modifier</a>
+                   <form asp-action="Delete" method="post">
+                    <input type="hidden" name="sectionId" value="@sections.Id" />
+                    <button type="submit" class="btn btn-danger">Supprimer</button>
                     </form>
                     <a asp-controller="Section" asp-action="Creneaux" asp-route-id="@sections.Id">Voir les créneaux</a>
 

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SiteWebMultiSport.Models;
+using static System.Collections.Specialized.BitVector32;
+using Section = SiteWebMultiSport.Models.Section;
 
 namespace SiteWebMultiSport.Controllers
 {
@@ -152,15 +154,39 @@ namespace SiteWebMultiSport.Controllers
         }
 
         [HttpPost]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(int sectionId)
         {
             if (!IsAdmin()) return Unauthorized();
 
-            var section = _context.Sections.Find(id);
-            if (section == null) return NotFound();
+            // Récupère la section à supprimer avec ses créneaux associés
+            var section = _context.Sections
+                .Include(s => s.Creneaux)
+                .ThenInclude(c => c.Adherants)  // Inclure les adhérents inscrits aux créneaux
+                .FirstOrDefault(s => s.Id == sectionId);
 
+            if (section == null)
+            {
+                return NotFound(); // Si la section n'existe pas, retourner une erreur 404
+            }
+
+            // Dissocier les adhérents de tous les créneaux associés à cette section
+            foreach (var creneau in section.Creneaux)
+            {
+                foreach (var adherant in creneau.Adherants.ToList()) // On utilise ToList() pour itérer sur la collection tout en la modifiant
+                {
+                    creneau.Adherants.Remove(adherant); // Retirer l'adhérent du créneau
+                }
+            }
+
+            // Supprimer les créneaux associés à cette section
+            _context.Creneaux.RemoveRange(section.Creneaux);
+
+            // Supprimer la section
             _context.Sections.Remove(section);
+
+            // Sauvegarder les changements dans la base de données
             _context.SaveChanges();
+
             return RedirectToAction("Index");
         }
 

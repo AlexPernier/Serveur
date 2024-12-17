@@ -58,12 +58,6 @@ namespace SiteWebMultiSport.Data
             context.Sections.AddRange(sections);
             context.SaveChanges();
 
-        
-
-         
-
-         
-
             // Ajout des créneaux liés aux sections
             var creneaux = new List<Creneau>
             {
@@ -88,7 +82,9 @@ namespace SiteWebMultiSport.Data
                 DateNaissance = "12/01/2002",
                 PasswordHash = PasswordHelper.HashPassword("admin123"),
                 Phone = "0764584715",
-                IsAdmin = true
+                IsAdmin = true,
+                IsSubscribed = true,
+                IsEncadrant = true,
             };
             context.Adherants.Add(admin);
 

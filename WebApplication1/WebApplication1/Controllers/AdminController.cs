@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SiteWebMultiSport.Helpers;
 using SiteWebMultiSport.Models;
-using WebApplication1.Migrations;
 using SiteWebMultiSport.Helpers;
 
 namespace SiteWebMultiSport.Controllers

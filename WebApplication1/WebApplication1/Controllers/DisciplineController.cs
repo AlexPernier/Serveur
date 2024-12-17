@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SiteWebMultiSport.Models;
 
 namespace SiteWebMultiSport.Controllers
@@ -43,12 +44,32 @@ namespace SiteWebMultiSport.Controllers
         // Supprimer une discipline
         public IActionResult Delete(int id)
         {
-            var discipline = _context.Disciplines.Find(id);
-            if (discipline != null)
+            var discipline = _context.Disciplines
+       .Include(d => d.Sections)
+       .ThenInclude(s => s.Creneaux)
+       .ThenInclude(c => c.Adherants) // Inclut les adhérents des créneaux
+       .FirstOrDefault(d => d.Id == id);
+
+            if (discipline == null)
             {
-                _context.Disciplines.Remove(discipline);
-                _context.SaveChanges();
+                return NotFound();
             }
+
+            // Supprimer les adhérents des créneaux avant de supprimer la discipline
+            foreach (var section in discipline.Sections)
+            {
+                foreach (var creneau in section.Creneaux)
+                {
+                    foreach (var adherant in creneau.Adherants.ToList())
+                    {
+                        creneau.Adherants.Remove(adherant); // Retirer l'adhérent du créneau
+                    }
+                }
+            }
+
+            // Maintenant, vous pouvez supprimer la discipline sans violer les contraintes
+            _context.Disciplines.Remove(discipline);
+            _context.SaveChanges();
             return RedirectToAction("Index");
         }
     }
