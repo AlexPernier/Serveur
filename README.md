@@ -41,7 +41,7 @@ Exécutez les commandes suivantes pour appliquer les migrations et initialiser l
 dotnet ef migrations add InitialCreate   # Ajoute les migrations initiales
 dotnet ef database update               # Applique les migrations et crée la base de données
 ```
-Le DataSeeder sera exécuté automatiquement si la base de données est vide. Ce script insère des données de test pour les disciplines, sections, créneaux et adhérant.
+Le DataSeeder sera exécuté automatiquement au lancement du projet. Ce script insère des données de test pour les disciplines, sections, créneaux et adhérant.
 
 4. Lancer le projet
 Pour démarrer le projet en local, utilisez la commande suivante :
@@ -52,11 +52,16 @@ dotnet run
 Le projet sera accessible sur https://localhost:5001 ou http://localhost:5000 par défaut.
 
 ### Utilisation
-#### Créer un compte administrateur
-Lors du premier lancement, un utilisateur administrateur avec le nom Admin et le mot de passe admin123 sera créé. Vous pouvez utiliser ces identifiants pour vous connecter et gérer les sections, disciplines, créneaux et autres éléments du projet.
+#### Utilisation des comptes
+Lors du lancement, un utilisateur administrateur avec le nom Admin et le mot de passe admin123 sera créé. Vous pouvez utiliser ces identifiants pour vous connecter et gérer les sections, disciplines, créneaux, adhérents et autres éléments du projet.
+Un adhérent encadrant est aussi créer avec le nom jean et le mot de passe encadrant123.
+Enfin 3 adhérents simple sont créés avec respectivement comme nom Alice, Bob et Clara avec comme mot de passe respectivement password1, password2 et password3.
+Vous pouvez vous inscrire pour créer votre compte adhérent.
 
-#### Ajouter des sections et créneaux
+#### Gestion des disciplines, des sections et créneaux
 En tant qu'administrateur, vous pouvez ajouter des disciplines, des sections et des créneaux depuis l'interface web. Les adhérents pourront ensuite s'inscrire à ces créneaux si leur abonnement est actif.
+Si vous êtes un adhérent encadrant, vous pouvez gérer les créneaux de votre section. (En cliquant sur votre nom dans le header, l'option "Gérer vos Sections" apparait).
 
 #### Inscription et gestion des adhérents
 Les adhérents peuvent s'inscrire à des créneaux via l'interface utilisateur, sous réserve d'avoir un abonnement valide.
+Ils peuvent donc s'abonner si ce n'est pas déjà fais et envoyer des documents si besoin qu'un administrateurr peut valider.
