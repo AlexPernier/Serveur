@@ -52,7 +52,7 @@ dotnet run
 Le projet sera accessible sur https://localhost:5001 ou http://localhost:5000 par défaut.
 
 ### Utilisation
-####Créer un compte administrateur
+#### Créer un compte administrateur
 Lors du premier lancement, un utilisateur administrateur avec le nom Admin et le mot de passe admin123 sera créé. Vous pouvez utiliser ces identifiants pour vous connecter et gérer les sections, disciplines, créneaux et autres éléments du projet.
 
 #### Ajouter des sections et créneaux
