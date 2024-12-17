@@ -37,26 +37,26 @@ Le projet utilise LocalDB par défaut. Si vous utilisez SQL Server, modifiez la 
 3. Créer la base de données
 Exécutez les commandes suivantes pour appliquer les migrations et initialiser la base de données :
 
-bash
-Copier le code
+```bash
 dotnet ef migrations add InitialCreate   # Ajoute les migrations initiales
 dotnet ef database update               # Applique les migrations et crée la base de données
-Le DataSeeder sera exécuté automatiquement si la base de données est vide. Ce script insère des données de test pour les disciplines, sections, créneaux et un utilisateur admin avec le nom Admin et le mot de passe admin123.
+```
+Le DataSeeder sera exécuté automatiquement si la base de données est vide. Ce script insère des données de test pour les disciplines, sections, créneaux et adhérant.
 
 4. Lancer le projet
 Pour démarrer le projet en local, utilisez la commande suivante :
 
-bash
-Copier le code
+```bash
 dotnet run
+```
 Le projet sera accessible sur https://localhost:5001 ou http://localhost:5000 par défaut.
 
-Utilisation
-Créer un compte administrateur
+### Utilisation
+####Créer un compte administrateur
 Lors du premier lancement, un utilisateur administrateur avec le nom Admin et le mot de passe admin123 sera créé. Vous pouvez utiliser ces identifiants pour vous connecter et gérer les sections, disciplines, créneaux et autres éléments du projet.
 
-Ajouter des sections et créneaux
+#### Ajouter des sections et créneaux
 En tant qu'administrateur, vous pouvez ajouter des disciplines, des sections et des créneaux depuis l'interface web. Les adhérents pourront ensuite s'inscrire à ces créneaux si leur abonnement est actif.
 
-Inscription et gestion des adhérents
+#### Inscription et gestion des adhérents
 Les adhérents peuvent s'inscrire à des créneaux via l'interface utilisateur, sous réserve d'avoir un abonnement valide.
