@@ -2,6 +2,8 @@
 using SiteWebMultiSport.Helpers;
 using SiteWebMultiSport.Models;
 using SiteWebMultiSport.Helpers;
+using Microsoft.EntityFrameworkCore;
+using static System.Collections.Specialized.BitVector32;
 
 namespace SiteWebMultiSport.Controllers
 {
@@ -85,12 +87,23 @@ namespace SiteWebMultiSport.Controllers
                 return Unauthorized();
             }
 
-            var adherant = _context.Adherants.FirstOrDefault(a => a.Id == id);
-            if (adherant != null)
+            var adherant = _context.Adherants
+                .Include(c => c.Creneaux) // Charger les relations avec les adhérents
+                .FirstOrDefault(c => c.Id == id);
+
+            if (adherant == null)
             {
-                _context.Adherants.Remove(adherant);
-                _context.SaveChanges();
+                return NotFound();
             }
+
+            // Supprimer manuellement les relations dans la table de jointure
+            _context.Entry(adherant).Collection(c => c.Creneaux).Load();
+            adherant.Creneaux.Clear(); // Supprime toutes les relations
+            _context.SaveChanges();
+
+            // Ensuite, supprimer l'adherant
+            _context.Adherants.Remove(adherant);
+            _context.SaveChanges();
 
             return RedirectToAction("Index");
         }
