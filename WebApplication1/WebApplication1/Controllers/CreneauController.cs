@@ -248,7 +248,15 @@ namespace SiteWebMultiSport.Controllers
             _context.Creneaux.Remove(creneau);
             _context.SaveChanges();
 
-            return RedirectToAction("Index", "Section");
+            if (IsAdmin())
+            {
+                return RedirectToAction("Index", "Section");
+            }
+            else
+            {
+                return RedirectToAction("MesSections", "Section");
+            }
+           
 
         }
 

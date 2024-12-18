@@ -24,10 +24,21 @@ namespace SiteWebMultiSport.Controllers
             return adherant?.IsAdmin ?? false;
         }
 
+        private bool IsEncadrant()
+        {
+
+
+            var adherantId = HttpContext.Session.GetString("AdherantId");
+            if (adherantId == null) return false;
+
+            var adherant = _context.Adherants.FirstOrDefault(a => a.Id.ToString() == adherantId);
+            return adherant?.IsEncadrant ?? false;
+        }
+
         [HttpGet]
         public IActionResult Index()
         {
-            if (!IsAdmin())
+            if (!IsAdmin() && !IsEncadrant())
             {
                 return Unauthorized(); // Renvoie une erreur si l'utilisateur n'est pas admin
             }
@@ -105,8 +116,9 @@ namespace SiteWebMultiSport.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            if (!IsAdmin()) return Unauthorized();
-
+            if (!IsAdmin() && !IsEncadrant()) {
+                return Unauthorized();
+            }
             var section = _context.Sections.Find(id);
             if (section == null) return NotFound();
 
@@ -119,7 +131,9 @@ namespace SiteWebMultiSport.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Section section)
         {
-            if (!IsAdmin()) return Unauthorized();
+            if (!IsAdmin() && !IsEncadrant()) {
+                return Unauthorized();
+            }
 
             // Vérifiez les valeurs envoyées par le formulaire
             if (section.DisciplineId == 0)
@@ -150,13 +164,20 @@ namespace SiteWebMultiSport.Controllers
 
             _context.Sections.Update(section);
             _context.SaveChanges();
-            return RedirectToAction("Index"); 
+            if (IsAdmin())
+            {
+                return RedirectToAction("Index");
+            } else
+            {
+                return RedirectToAction("MesSections");
+            }
+            
         }
 
         [HttpPost]
         public IActionResult Delete(int sectionId)
         {
-            if (!IsAdmin()) return Unauthorized();
+            if (!IsAdmin() && !IsEncadrant()) return Unauthorized();
 
             // Récupère la section à supprimer avec ses créneaux associés
             var section = _context.Sections
